@@ -1,3 +1,8 @@
+import api.controller.AuthController;
+import api.controller.CustomerController;
+import api.service.CustomerService;
+import api.util.CommonUtil;
+
 /**
  * @author :arjun
  * Project :Spark-JWT
@@ -6,4 +11,8 @@
  */
 
 public class Main {
+    public static void main(String[] args) {
+        new CustomerController(new CustomerService(),/*To do */);
+        new AuthController(/* To do */);
+    }
 }
