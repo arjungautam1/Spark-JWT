@@ -12,7 +12,7 @@ import api.util.CommonUtil;
 
 public class Main {
     public static void main(String[] args) {
-        new CustomerController(new CustomerService(),/*To do */);
-        new AuthController(/* To do */);
+        new CustomerController(new CustomerService(),CommonUtil.getJsonConvertor());
+        new AuthController(CommonUtil.getJsonConvertor());
     }
 }
